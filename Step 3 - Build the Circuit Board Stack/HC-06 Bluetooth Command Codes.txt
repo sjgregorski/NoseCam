@@ -1,0 +1,40 @@
+NOTE - Some modules are very fussy while trying to program them.  After the AT command, they may require CR+LF, nothing, or some other combo
+
+Command examples:
+
+AT+NAME
+
+AT+VERSION
+
+AT+NAME57600BDPWD1234
+
+AT+BAUD7
+
+AT+PIN1234
+
+
+
+Most useful AT commands are
+
+AT : Check the connection.
+AT+NAME : See default name
+AT+ADDR : see default address
+AT+VERSION : See version
+AT+UART : See baudrate
+AT+ROLE: See role of bt module(1=master/0=slave)
+AT+RESET : Reset and exit AT mode
+AT+ORGL : Restore factory settings
+AT+PSWD: see default password
+
+
+Setting the Baud Rate:
+
+1 set to 1200bps
+2 set to 2400bps
+3 set to 4800bps
+4 set to 9600bps (Default)
+5 set to 19200bps
+6 set to 38400bps
+7 set to 57600bps
+8 set to 115200bps
+so sending AT+BAUD4 will set the baud rate to 9600.
